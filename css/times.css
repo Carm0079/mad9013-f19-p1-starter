@@ -54,16 +54,6 @@ p {
     padding: 0.5rem 1rem;
 }
 
-.subnav a:hover {
-    background-color: var(--secondary-color);
-    color: var(--white);
-}
-
-.subnav a:active {
-    background-color: hsla(0, 0%, 0%, 0.2);
-    color: var(--white);
-}
-
 .mainnav {
     display: flex;
     justify-content: space-around;
@@ -83,9 +73,12 @@ p {
     padding: 1.5rem 0.5rem;
 }
 
-.mainnav a:hover {
-    color: var(--white);
+a:hover {
     background-color: var(--secondary-color);
+}
+
+a:active {
+    background-color: hsla(0, 0%, 0%, 0.2);
 }
 
 .masthead {
@@ -103,6 +96,7 @@ p {
     font-weight: 100;
     color: var(--white);
     margin-bottom: 0;
+    font-size: 4rem;
 }
 
 .content {
