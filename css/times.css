@@ -31,6 +31,22 @@ h1, h2, h3, h4 {
     font-family: 'Hepta Slab', Times, serif;
 }
 
+h1 {
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
 p {
     
 }
@@ -96,7 +112,6 @@ a:active {
     font-weight: 100;
     color: var(--white);
     margin-bottom: 0;
-    font-size: 4rem;
 }
 
 .content {
@@ -119,10 +134,16 @@ a:active {
     grid-column: span 2;
 }
 
+.story.lead-story h2.story-title, .story.lead-story p.byline {
+    /* border-bottom: 1px solid var(--secondary-color); */
+}
+
 h2.story-title {
+    border-left: 4px solid var(--white);
+    padding-left: 1rem;
     margin-top: 0.5rem;
-    border-bottom: 1px solid var(--white);
-    border-bottom-right-radius: 10px;
+    /* border-bottom: 1px solid var(--white);
+    border-bottom-right-radius: 10px; */
     margin-bottom: 0rem;
 }
 
@@ -130,7 +151,7 @@ h2.story-title {
     float: left;
     clear: both;
     margin: 0 1rem 1rem 0;
-    border-radius: 10px;
+    border-radius: 16px;
 }
 
 .story p {
@@ -150,10 +171,13 @@ h2.story-title {
 }
 
 .story p.byline {
+    background-color: hsla(0, 0%, 0%, 0.2);
+    padding: 1rem;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--white);
-    border-bottom-right-radius: 10px;
+    /* border-bottom: 1px solid var(--white);
+    border-bottom-right-radius: 10px; */
     margin-top: 0.5rem;
 }
 
