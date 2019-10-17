@@ -58,11 +58,15 @@ p {
 .subnav {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--primary-color);
+    background-color: var(--white);
+    border-bottom: 1px solid var(--primary-color);
+    box-shadow: 0px 5px 10px 0px hsl(0, 0%, 90%);
+    z-index: 10;
+    position: relative;
 }
 
 .subnav a {
-    color: var(--white);
+    color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: none;
@@ -134,17 +138,11 @@ a:active {
     grid-column: span 2;
 }
 
-.story.lead-story h2.story-title, .story.lead-story p.byline {
-    /* border-bottom: 1px solid var(--secondary-color); */
-}
-
 h2.story-title {
     border-left: 4px solid var(--white);
     padding-left: 1rem;
     margin-top: 0.5rem;
-    /* border-bottom: 1px solid var(--white);
-    border-bottom-right-radius: 10px; */
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 .story img {
@@ -176,9 +174,6 @@ h2.story-title {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    /* border-bottom: 1px solid var(--white);
-    border-bottom-right-radius: 10px; */
-    margin-top: 0.5rem;
 }
 
 p.byline span.author::before {
